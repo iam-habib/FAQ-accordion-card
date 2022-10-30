@@ -1,0 +1,921 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz@1,9..144&family=Lato&family=Montserrat&family=Open+Sans:wght@400;800&family=Oswald&family=Poppins:wght@400;600&family=Roboto&display=swap");
+
+:root {
+  --Verydarkdesaturatedblue: hsl(238, 29%, 16%);
+  --Softred: hsl(14, 88%, 65%);
+  --Softviolet: hsl(273, 75%, 66%);
+  --Softblue: hsl(240, 73%, 65%);
+  --Verydarkgrayishblue: hsl(237, 12%, 33%);
+  --Darkgrayishblue: hsl(240, 6%, 50%);
+  --Lightgrayishblue: hsl(240, 5%, 91%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  height: 100vh;
+}
+.mobile_pattern {
+  display: none;
+}
+
+.mobile_women {
+  display: none;
+}
+
+.container {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container .faq_card {
+  width: 100%;
+  height: 55vh;
+  border-radius: 1em;
+  background-color: white;
+}
+
+.faq_card {
+  display: flex;
+}
+
+.faq_card .left_card {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+}
+.faq_card .right_card {
+  width: 50%;
+  position: relative;
+}
+
+.left_card .pattern {
+  width: 50vw;
+  height: 550px;
+  transform: translate(-48%, -5%);
+}
+
+.faq_card .box {
+  width: 150px;
+  position: absolute;
+  top: 46%;
+  left: -10%;
+  overflow: hidden;
+}
+
+.left_card .women {
+  width: 90%;
+  position: absolute;
+  top: 16%;
+  left: -16%;
+}
+
+.right_card {
+  padding: 3em 4em 3em 3em;
+}
+
+.right_card h1 {
+  font-family: "poppins";
+  margin: 0 0 0.5em 0;
+}
+
+.right_card .faq_sec .text_faq {
+  margin: 1em 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.right_card .faq_sec .box5 {
+  margin: 1em 0;
+  border-bottom: 0px solid rgba(0, 0, 0, 0.1);
+}
+
+.text_faq p {
+  display: inline-block;
+  margin: 0.5em 0;
+  font-size: 1rem;
+  font-family: "open sans";
+  color: var(--Verydarkgrayishblue);
+  position: relative;
+}
+
+.text_faq img {
+  position: absolute;
+  right: 15%;
+  transform: translateY(20px);
+  cursor: pointer;
+}
+.text_faq .active {
+  transform: translateY(-25px) rotate(180deg);
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.text_faq .title:hover {
+  color: var(--Softred);
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: normal;
+  text-shadow: 0px 0px 1px currentColor;
+}
+
+.text_faq .hide {
+  display: none;
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1650px) {
+  .container .faq_card {
+    height: 60vh;
+  }
+
+  .faq_card .box {
+    width: 140px;
+    top: 43%;
+    left: -10%;
+  }
+  .text_faq img {
+    transform: translateY(15px);
+  }
+
+  .text_faq .active {
+    transform: translateY(-20px) rotate(180deg);
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1500px) {
+  .container .faq_card {
+    height: 55vh;
+  }
+
+  .left_card .women {
+    width: 85%;
+  }
+
+  .left_card .pattern {
+    width: 45vw;
+    height: 500px;
+  }
+
+  .faq_card .box {
+    width: 130px;
+    top: 42%;
+    left: -11%;
+  }
+
+  .right_card {
+    padding: 2.5em 3em 2.5em 2.5em;
+  }
+
+  .text_faq img {
+    right: 12%;
+  }
+
+  .text_faq p {
+    font-size: 0.95rem;
+  }
+
+  .text_faq img {
+    transform: translateY(13px);
+  }
+
+  .text_faq .active {
+    transform: translateY(-18px) rotate(180deg);
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+  .container .faq_card {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .left_card .women {
+    width: 85%;
+  }
+
+  .left_card .pattern {
+    width: 40vw;
+    height: 450px;
+  }
+
+  .faq_card .left_card {
+    position: relative;
+    width: 45%;
+    overflow: hidden;
+  }
+  .faq_card .right_card {
+    width: 55%;
+    position: relative;
+  }
+
+  .faq_card .box {
+    width: 120px;
+    top: 41%;
+    left: -10%;
+  }
+
+  .right_card {
+    padding: 2em 2.5em 2em 2em;
+  }
+
+  .text_faq img {
+    right: 9%;
+  }
+
+  .text_faq p {
+    font-size: 0.85rem;
+  }
+
+  .text_faq img {
+    transform: translateY(13px);
+  }
+
+  .text_faq .active {
+    transform: translateY(-18px) rotate(180deg);
+  }
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1300px) {
+  .container .faq_card {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .left_card .women {
+    width: 90%;
+  }
+
+  .left_card .pattern {
+    width: 40vw;
+    height: 380px;
+  }
+
+  .faq_card .left_card {
+    position: relative;
+    width: 45%;
+    overflow: hidden;
+  }
+  .faq_card .right_card {
+    width: 55%;
+    position: relative;
+  }
+
+  .faq_card .box {
+    width: 100px;
+    top: 38%;
+    left: -10.5%;
+  }
+
+  .right_card {
+    padding: 1.5em 2em 1.5em 1.5em;
+  }
+
+  .text_faq img {
+    right: 9%;
+  }
+
+  .text_faq p {
+    font-size: 0.8rem;
+  }
+
+  .text_faq img {
+    transform: translateY(11px);
+  }
+
+  .text_faq .active {
+    transform: translateY(-16px) rotate(180deg);
+  }
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1100px) {
+  .container .faq_card {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .left_card .women {
+    width: 100%;
+  }
+
+  .left_card .pattern {
+    width: 40vw;
+    height: 350px;
+  }
+
+  .faq_card .left_card {
+    position: relative;
+    width: 45%;
+    overflow: hidden;
+  }
+  .faq_card .right_card {
+    width: 55%;
+    position: relative;
+  }
+
+  .faq_card .box {
+    width: 90px;
+    top: 37%;
+    left: -10%;
+  }
+
+  .faq_card .left_card {
+    position: relative;
+    width: 40%;
+    overflow: hidden;
+  }
+  .faq_card .right_card {
+    width: 60%;
+    position: relative;
+  }
+
+  .right_card {
+    padding: 1.5em 1.5em 1.5em 1.5em;
+  }
+
+  .text_faq img {
+    right: 9%;
+  }
+
+  .text_faq p {
+    font-size: 0.8rem;
+  }
+
+  .text_faq img {
+    transform: translateY(10px);
+  }
+
+  .text_faq .active {
+    transform: translateY(-15px) rotate(180deg);
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1050px) {
+  .container .faq_card {
+    width: 100%;
+    height: 45vh;
+  }
+
+  .left_card .women {
+    width: 95%;
+  }
+
+  .left_card .pattern {
+    width: 35vw;
+    height: 350px;
+  }
+
+  .faq_card .left_card {
+    position: relative;
+    width: 45%;
+    overflow: hidden;
+  }
+  .faq_card .right_card {
+    width: 55%;
+    position: relative;
+  }
+
+  .faq_card .box {
+    width: 80px;
+    top: 36%;
+    left: -9.5%;
+  }
+
+  .right_card {
+    padding: 1.5em 1.5em 1.5em 1.5em;
+  }
+
+  .text_faq img {
+    right: 9%;
+  }
+
+  .text_faq p {
+    font-size: 0.75rem;
+  }
+
+  .text_faq img {
+    transform: translateY(10px);
+  }
+
+  .text_faq .active {
+    transform: translateY(-15px) rotate(180deg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 850px) {
+  .container {
+    width: 60%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+  }
+  .container .faq_card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 65vh;
+  }
+
+  .faq_card .right_card {
+    width: 100%;
+    height: 75%;
+  }
+
+  .faq_card .left_card {
+    width: 100%;
+    height: 25%;
+    overflow: visible;
+  }
+
+  .left_card .pattern {
+    display: none;
+  }
+
+  .left_card .women {
+    display: none;
+  }
+
+  .faq_card .box {
+    width: 90px;
+    top: -8%;
+    left: 18%;
+  }
+
+  .mobile_pattern {
+    position: absolute;
+    top: -10%;
+    left: 17%;
+    width: 70%;
+    display: block;
+    margin: auto;
+  }
+
+  .mobile_women {
+    display: block;
+    width: 70%;
+    position: absolute;
+    top: -115%;
+    left: 17%;
+  }
+
+  .right_card h1 {
+    text-align: center;
+  }
+
+  .text_faq p {
+    font-size: 01rem;
+  }
+
+  .faq_card .right_card {
+    padding: 1em 4em 2.5em 4em;
+  }
+
+  .right_card .faq_sec .text_faq {
+    width: 100%;
+  }
+
+  .text_faq img {
+    transform: translateY(15px);
+  }
+
+  .text_faq .active {
+    transform: translateY(-20px) rotate(180deg);
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 768px) {
+  .container {
+    width: 65%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+  }
+  .container .faq_card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+  }
+
+  .faq_card .right_card {
+    width: 100%;
+    height: 75%;
+  }
+
+  .faq_card .left_card {
+    width: 100%;
+    height: 25%;
+    overflow: visible;
+  }
+
+  .left_card .pattern {
+    display: none;
+  }
+
+  .left_card .women {
+    display: none;
+  }
+
+  .faq_card .box {
+    width: 85px;
+    top: -8%;
+    left: 18%;
+  }
+
+  .mobile_pattern {
+    position: absolute;
+    top: -7%;
+    left: 17%;
+    width: 70%;
+    display: block;
+    margin: auto;
+  }
+
+  .mobile_women {
+    display: block;
+    width: 70%;
+    position: absolute;
+    top: -95%;
+    left: 17%;
+  }
+
+  .right_card h1 {
+    text-align: center;
+  }
+
+  .text_faq p {
+    font-size: 1rem;
+  }
+
+  .text_faq img {
+    right: 9%;
+  }
+
+  .faq_card .right_card {
+    width: 100%;
+    margin: auto;
+    padding: 1em 3em 2.5em 3em;
+  }
+
+  .text_faq img {
+    transform: translateY(13px);
+  }
+
+  .text_faq .active {
+    transform: translateY(-18px) rotate(180deg);
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 650px) {
+  .container {
+    width: 75%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+  }
+  .container .faq_card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+  }
+
+  .faq_card .right_card {
+    width: 100%;
+    height: 75%;
+  }
+
+  .faq_card .left_card {
+    width: 100%;
+    height: 25%;
+    overflow: visible;
+  }
+
+  .left_card .pattern {
+    display: none;
+  }
+
+  .left_card .women {
+    display: none;
+  }
+
+  .faq_card .box {
+    width: 80px;
+    top: -5%;
+    left: 18%;
+  }
+
+  .mobile_pattern {
+    position: absolute;
+    top: -3%;
+    left: 17%;
+    width: 70%;
+    display: block;
+    margin: auto;
+  }
+
+  .mobile_women {
+    display: block;
+    width: 70%;
+    position: absolute;
+    top: -90%;
+    left: 17%;
+  }
+
+  .right_card h1 {
+    text-align: center;
+  }
+
+  .text_faq p {
+    font-size: 1rem;
+  }
+
+  .text_faq img {
+    right: 9%;
+  }
+
+  .faq_card .right_card {
+    width: 100%;
+    margin: auto;
+    padding: 1em 2.8em 2.5em;
+  }
+
+  .text_faq img {
+    transform: translateY(12px);
+  }
+
+  .text_faq .active {
+    transform: translateY(-17px) rotate(180deg);
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 550px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    width: 75%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+  }
+  .container .faq_card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 55vh;
+  }
+
+  .faq_card .right_card {
+    width: 100%;
+    height: 75%;
+  }
+
+  .faq_card .left_card {
+    width: 100%;
+    height: 25%;
+    overflow: visible;
+  }
+
+  .left_card .pattern {
+    display: none;
+  }
+
+  .left_card .women {
+    display: none;
+  }
+
+  .faq_card .box {
+    width: 70px;
+    top: -7%;
+    left: 18%;
+  }
+
+  .mobile_pattern {
+    position: absolute;
+    top: 0%;
+    left: 17%;
+    width: 70%;
+    display: block;
+    margin: auto;
+  }
+
+  .mobile_women {
+    display: block;
+    width: 70%;
+    position: absolute;
+    top: -100%;
+    left: 17%;
+  }
+
+  .right_card h1 {
+    text-align: center;
+  }
+
+  .text_faq p {
+    font-size: 1rem;
+  }
+
+  .text_faq img {
+    right: 9%;
+  }
+
+  .faq_card .right_card {
+    width: 100%;
+    margin: auto;
+    padding: 1em 2.8em 2.5em;
+  }
+
+  .text_faq img {
+    transform: translateY(11px);
+  }
+
+  .text_faq .active {
+    transform: translateY(-16px) rotate(180deg);
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 450px) {
+  html {
+    font-size: 11px;
+  }
+  .container {
+    width: 80%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+  }
+  .container .faq_card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .faq_card .right_card {
+    width: 100%;
+    height: 75%;
+  }
+
+  .faq_card .left_card {
+    width: 100%;
+    height: 25%;
+    overflow: visible;
+  }
+
+  .left_card .pattern {
+    display: none;
+  }
+
+  .left_card .women {
+    display: none;
+  }
+
+  .faq_card .box {
+    width: 60px;
+    top: -8%;
+    left: 18%;
+  }
+
+  .mobile_pattern {
+    position: absolute;
+    top: 0%;
+    left: 17%;
+    width: 70%;
+    display: block;
+    margin: auto;
+  }
+
+  .mobile_women {
+    display: block;
+    width: 70%;
+    position: absolute;
+    top: -100%;
+    left: 17%;
+  }
+
+  .right_card h1 {
+    text-align: center;
+  }
+
+  .text_faq p {
+    font-size: 1rem;
+  }
+
+  .text_faq img {
+    right: 9%;
+  }
+
+  .faq_card .right_card {
+    width: 100%;
+    margin: auto;
+    padding: 1em 2.8em 2.5em;
+  }
+
+  .text_faq img {
+    transform: translateY(10px);
+  }
+
+  .text_faq .active {
+    transform: translateY(-15px) rotate(180deg);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    width: 80%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+  }
+  .container .faq_card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 45vh;
+  }
+
+  .faq_card .right_card {
+    width: 100%;
+    height: 75%;
+  }
+
+  .faq_card .left_card {
+    width: 100%;
+    height: 25%;
+    overflow: visible;
+  }
+
+  .left_card .pattern {
+    display: none;
+  }
+
+  .left_card .women {
+    display: none;
+  }
+
+  .faq_card .box {
+    width: 60px;
+    top: -7%;
+    left: 18%;
+  }
+
+  .mobile_pattern {
+    position: absolute;
+    top: 0%;
+    left: 17%;
+    width: 70%;
+    display: block;
+    margin: auto;
+  }
+
+  .mobile_women {
+    display: block;
+    width: 70%;
+    position: absolute;
+    top: -90%;
+    left: 17%;
+  }
+
+  .right_card h1 {
+    text-align: center;
+  }
+
+  .text_faq p {
+    font-size: 1rem;
+  }
+
+  .text_faq img {
+    right: 9%;
+  }
+
+  .faq_card .right_card {
+    width: 100%;
+    margin: auto;
+    padding: 1em 2.8em 2.5em;
+  }
+
+  .text_faq img {
+    transform: translateY(10px);
+  }
+
+  .text_faq .active {
+    transform: translateY(-15px) rotate(180deg);
+  }
+}
